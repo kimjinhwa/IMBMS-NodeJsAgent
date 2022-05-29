@@ -1,5 +1,7 @@
 "use strict"
 
+const { post } = require("../../../routes/home");
+
 const userId = document.querySelector("#userId");
 const passwd= document.querySelector("#passwd");
 const button = document.querySelector("#submit");
@@ -10,6 +12,13 @@ function login(){
     const req = {
         userId : userId.value,
         passwd : passwd.value
-    }
-    console.log(req);
+    };
+
+    fetch("/login",{
+        method: "POST",
+        headers:{
+            "Content-Type":"application/json"
+        },
+        body: JSON.stringify(req)
+    });
 }
