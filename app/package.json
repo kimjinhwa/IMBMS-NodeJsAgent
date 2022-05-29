@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  },
+  "scripts": {
+    "start": "nodemon ./bin/www.js"
+  },
+  "name": "imbms-nodejsagent",
+  "description": "NodeJs를 이용한 데이타 전송서버.",
+  "version": "1.0.0",
+  "main": "app.js",
+  "bin": {
+    "imbms-nodejsagent": "bin/www.js"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimjinhwa/IMBMS-NodeJsAgent.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimjinhwa/IMBMS-NodeJsAgent/issues"
+  },
+  "homepage": "https://github.com/kimjinhwa/IMBMS-NodeJsAgent#readme"
+}
